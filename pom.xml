@@ -4,7 +4,7 @@
   <groupId>com.jenkins.demo</groupId>
   <artifactId>JenkinsWar1</artifactId>
   <packaging>war</packaging>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.3</version>
   <name>JenkinsWar Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
@@ -16,11 +16,18 @@
     </dependency>
     </dependencies>
    <distributionManagement>
+	   
+	   	<repository>
+			<id>test-release</id>
+			<url>http://localhost:8081/repository/test-release/</url>
+		</repository>
 
 		<snapshotRepository>
 			<id>test-snapshot</id>
 			<url>http://localhost:8081/repository/test-snapshot/</url>
-		</snapshotRepository>		
+		</snapshotRepository>	
+	   
+	   
   </distributionManagement>
   
   <build>
